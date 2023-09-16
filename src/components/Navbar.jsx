@@ -4,7 +4,7 @@ import './Navbar.scss';
 function Navbar() {
     return (
         <div className="nav">
-            <span className='title'><NavLink to='/'>Movies</NavLink></span>
+            <span className='title'><NavLink to='/'>Shows</NavLink></span>
         </div>
     )
 }
