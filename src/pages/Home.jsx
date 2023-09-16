@@ -22,7 +22,6 @@ function Home (){
                 {
                     load && res.map((el,i) => {
                         return <Card id={el.id} status = {el.status} title={el.name} image={el.image.medium} desc={el.summary} releaseDate = {el.premiered}/>;
-                        console.log(res)
                     })
                 }
                 

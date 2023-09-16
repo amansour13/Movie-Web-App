@@ -1,0 +1,60 @@
+$firstColor : #EEEEEE;
+$secondColor : #64CCC5;
+$thirdColor: #176B87;
+$forthColor: #053B50;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: $firstColor;
+}
+@mixin dataHeight{
+    margin-bottom: 15px;
+}
+.movie-container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+    .left-section{
+        width: 25vw;
+        .movie-image{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .right-section{
+        width: 68vw;
+        background-color: $thirdColor;
+        padding: 20px;
+        box-sizing: border-box;
+        color: $firstColor;
+        border-radius: 10px;
+        .movie-info{
+            display: flex;
+            flex-direction: column;
+            background-color: $secondColor;
+            padding: 10px;
+            border-radius: 10px;
+            color: $forthColor;
+            @include dataHeight();
+            .line{
+                display: flex;
+                justify-content: space-between;
+                @include dataHeight()
+            }
+            .movie-rating{
+                width: 100%;
+                color: $forthColor;
+                @include dataHeight()
+            }
+            .movie-genres{
+                @include dataHeight()
+            }
+        }
+        
+    }
+}

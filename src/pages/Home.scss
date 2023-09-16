@@ -3,6 +3,9 @@ $secondColor : #64CCC5;
 $thirdColor: #176B87;
 $forthColor: #053B50;
 
+body{
+    background-color: $forthColor;
+}
 .container{
     display: flex;
     justify-content: space-around;
