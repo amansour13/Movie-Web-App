@@ -9,6 +9,9 @@ $forthColor: #053B50;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     a{
         color: #EEEEEE;
         text-decoration: none;
