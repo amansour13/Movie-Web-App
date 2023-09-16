@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
+import Card from '../components/Card';
+import './Home.scss';
 function Home (){
     const [res, setRes] = useState([]);
     const [load, setLoad] = useState(false);
@@ -19,7 +21,7 @@ function Home (){
             <div className='container'>
                 {
                     load && res.map((el,i) => {
-                        // return <Card id={el.id} title={el.title} image={el.thumbnail} price={el.price} rating={el.rating} dis={el.discountPercentage}/>;
+                        return <Card title={el.name} image={el.image.medium} desc={el.summary} releaseDate = {el.premiered}/>;
                         console.log(res)
                     })
                 }
