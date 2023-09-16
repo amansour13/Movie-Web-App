@@ -1,0 +1,20 @@
+$firstColor : #EEEEEE;
+$secondColor : #64CCC5;
+$thirdColor: #176B87;
+$forthColor: #053B50;
+.nav{
+    background-color: $thirdColor;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: #EEEEEE;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #64CCC5;
+    }
+
+}
