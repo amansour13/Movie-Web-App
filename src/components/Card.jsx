@@ -11,7 +11,9 @@ return (
                     <p className="movie-release">{movie.releaseDate}</p>
                     <p className='movie-status'>{movie.status}</p>
                 </div>
-                <h2 className="movie-title">{movie.title}</h2>
+                <div className='title'>
+                    <h2 className="movie-title">{movie.title}</h2>
+                </div>
             </div>
         </div>
         </Link>

@@ -61,6 +61,10 @@ return (
                         <div className="movie-desc">
                                 <p>{res.summary}</p>
                         </div>
+
+                        <div className='movie-url'>
+                            <a href={res.url} target='_blank'>more info...</a>
+                        </div>
                     </div>
                 </div>
             : console.log("error with api")
